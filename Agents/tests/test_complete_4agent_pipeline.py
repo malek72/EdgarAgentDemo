@@ -97,7 +97,7 @@ async def run_single_complete_pipeline_test(
         result = await pipeline.process_input(
             input_text=test_data["text"],
             source=test_data["source"],
-            recipient_email="mailsinghritivik@gmail.com",
+            recipient_email="mailtosinghritvik@gmail.com",
             max_ideas_to_research=1,
             max_reports_to_generate=1,
             send_email=test_data.get("send_email", True)
@@ -240,7 +240,7 @@ async def main():
     print("Agent 1 → Agent 2 → Agent 3 → Agent 4 (Email)")
     print("="*100)
     
-    print("\n⚠️  WARNING: This will send real emails to mailsinghritivik@gmail.com")
+    print("\n⚠️  WARNING: This will send real emails to mailtosinghritvik@gmail.com")
     confirm = input("Continue? (yes/no): ").strip().lower()
     
     if confirm != "yes":

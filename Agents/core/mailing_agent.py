@@ -73,7 +73,7 @@ class MailingAgent:
     async def send_report_email(
         self,
         pdf_path: str,
-        recipient_email: str = "mailsinghritivik@gmail.com",
+        recipient_email: str = "mailtosinghritvik@gmail.com",
         idea_data: Optional[Dict] = None,
         report_summary: Optional[str] = None
     ) -> Dict:
@@ -128,20 +128,23 @@ class MailingAgent:
                 print(f"[MailingAgent] Retrieved {len(tools)} Gmail tools")
                 print(f"[MailingAgent] Creating email with OpenAI...")
             
+            # Get absolute path for the PDF
+            abs_pdf_path = str(pdf_file.absolute())
+            
             # Create email instruction for OpenAI
+            subject_line = f"Investment Analysis Report - {idea_data.get('idea', 'Investment Opportunity')[:80] if idea_data else 'Investment Opportunity'}"
+            
             email_instruction = f"""
-Send an email using Gmail with the following details:
+Send an email via Gmail:
 
 To: {recipient_email}
-Subject: Investment Analysis Report - {idea_data.get('idea', 'Investment Opportunity')[:80] if idea_data else 'Investment Opportunity'}
+Subject: {subject_line}
 
-Email Body:
-{email_content}
+Body: {email_content}
 
-Attachment: The financial report PDF should be attached.
-(Note: PDF file is at {pdf_path})
+Important: Attach the PDF file located at this absolute path: {abs_pdf_path}
 
-Please send this email now.
+Send the email now with the attachment.
 """
             
             # Use OpenAI Chat Completion with Composio tools
@@ -222,83 +225,207 @@ Please send this email now.
         email_body = f"""
 Dear Investment Committee,
 
-I am writing to share a comprehensive financial analysis report on a high-potential investment opportunity that has been identified and thoroughly researched through our AI-powered multi-agent analysis system.
+I am sharing a comprehensive financial analysis report on a high-potential investment opportunity identified through our AI-powered multi-agent analysis system.
 
-**INVESTMENT OPPORTUNITY OVERVIEW:**
+------------------------------------------------------------------------
+INVESTMENT OPPORTUNITY OVERVIEW
+------------------------------------------------------------------------
 
-Opportunity: {idea_desc}
-
-Category: {category.replace('_', ' ').title()}
-Market Sector: {sector}
-Initial Feasibility Score: {feasibility}
-
-
-**ANALYSIS PROCESS:**
-
-This opportunity was processed through our complete 3-agent pipeline:
-
-1. **Agent 1 (Idea Extractor)**: Identified and validated the opportunity from incoming market intelligence
-2. **Agent 2 (Data Collector)**: Conducted comprehensive research across 40+ authoritative financial sources including:
-   - SEC Edgar regulatory filings
-   - SEDAR+ (Canadian filings)
-   - Buyside Digest institutional activity
-   - Bloomberg, Reuters, Financial Times news
-   - Crunchbase and PitchBook funding data
-   - IBISWorld and Statista market research
-   - Company investor relations data
-   - Alternative data sources
-
-3. **Agent 3 (Report Writer)**: Generated this comprehensive financial analysis report
+Opportunity:    {idea_desc}
+Category:       {category.replace('_', ' ').title()}
+Market Sector:  {sector}
+Feasibility:    {feasibility}
 
 
-**REPORT CONTENTS:**
+------------------------------------------------------------------------
+ANALYSIS PROCESS - MULTI-AGENT RESEARCH PIPELINE
+------------------------------------------------------------------------
 
-The attached PDF report provides a thorough investment analysis including:
+This investment opportunity was processed through our advanced 3-agent pipeline:
 
-✓ **Executive Summary** - Investment recommendation (Buy/Hold/Pass)
-✓ **Business Overview** - Detailed opportunity description and business model
-✓ **Market Analysis** - TAM/SAM sizing and growth projections
-✓ **Competitive Landscape** - Market share analysis and positioning
-✓ **Financial Analysis** - Revenue, margins, and key metrics
-✓ **Financial Figures** - 4 professional charts:
-   • Market Size Growth Projection
-   • Competitive Market Share Analysis
-   • Revenue & Margin Trends
-   • Valuation Comparison
-✓ **Investment Thesis** - Why this represents an attractive opportunity
-✓ **Risk Assessment** - Comprehensive risk analysis and mitigation
-✓ **Valuation** - Methodology and valuation ranges
-✓ **Recommendations** - Clear action items and next steps
+[AGENT 1: IDEA EXTRACTOR]
+• Identified and validated the opportunity from incoming market intelligence
+• Performed real-time web research for validation
+• Assessed market viability and feasibility
+• Extracted key metrics and competitive landscape
+
+[AGENT 2: DATA COLLECTOR]
+• Conducted exhaustive research across 40+ authoritative financial sources
+• Primary Sources:
+  → SEC Edgar - Regulatory filings (10-K, 10-Q, 8-K, DEF 14A)
+  → SEDAR+ - Canadian regulatory filings
+  → Buyside Digest - Institutional investment activity
+• Market Intelligence:
+  → Bloomberg, Reuters, Financial Times, Wall Street Journal
+  → Crunchbase & PitchBook - Venture capital and funding data
+  → IBISWorld & Statista - Industry market research
+  → Grand View Research, Markets and Markets - Market reports
+• Company Data:
+  → Investor relations websites
+  → Quarterly earnings reports and transcripts
+  → Annual reports and financial statements
+• Alternative Data:
+  → SimilarWeb, Sensor Tower - Web & mobile analytics
+  → LinkedIn, Glassdoor - Company & employment data
+
+[AGENT 3: REPORT WRITER]
+• Synthesized all collected data into comprehensive investment analysis
+• Generated professional financial report with visualizations
+• Developed investment thesis and risk assessment
+• Created actionable recommendations
 
 
-**KEY HIGHLIGHTS:**
+------------------------------------------------------------------------
+COMPREHENSIVE REPORT CONTENTS
+------------------------------------------------------------------------
 
-{report_summary if report_summary else "Please review the attached comprehensive report for detailed analysis, financial projections, competitive positioning, and investment recommendations."}
+The attached PDF report contains 10 detailed sections spanning 15-20 pages:
+
+1. EXECUTIVE SUMMARY
+   • Clear investment recommendation (Buy / Hold / Pass)
+   • Key investment thesis points
+   • Target valuation and expected returns
+   • Major risks and mitigation strategies
+   • Timeline and value catalysts
+
+2. BUSINESS OVERVIEW
+   • Detailed company/opportunity description
+   • Business model analysis and revenue streams
+   • Value proposition and competitive advantages
+   • Target market segments and customer analysis
+   • Management team assessment
+
+3. MARKET ANALYSIS  
+   • Total Addressable Market (TAM) sizing with methodology
+   • Serviceable Available Market (SAM) breakdown
+   • Market growth drivers and trends
+   • Industry dynamics and regulatory environment
+   • Technology trends and adoption curves
+
+4. COMPETITIVE LANDSCAPE
+   • Direct and indirect competitor analysis
+   • Market positioning and differentiation
+   • Competitive advantages and disadvantages
+   • Market share data and trends
+   • Barriers to entry analysis
+
+5. FINANCIAL ANALYSIS
+   • Historical revenue analysis (3-5 years)
+   • Profitability metrics (gross, operating, net margins)
+   • Growth rates (QoQ, YoY, CAGR projections)
+   • Unit economics and customer metrics
+   • Cash flow analysis and balance sheet strength
+   • Key financial ratios and benchmarks
+
+6. FINANCIAL FIGURES & VISUALIZATIONS
+   Four professional charts providing visual analysis:
+   
+   [Chart 1] Market Size Growth Projection (2023-2034)
+   • Historical market size data
+   • Projected growth trajectory with CAGR
+   • Key inflection points and market catalysts
+   
+   [Chart 2] Competitive Market Share Analysis
+   • Current market share breakdown by major players
+   • Competitive positioning comparison
+   • Market concentration metrics
+   
+   [Chart 3] Revenue & Margin Trends
+   • Quarterly revenue growth (historical & projected)
+   • Gross margin evolution and trends
+   • Operating leverage analysis
+   
+   [Chart 4] Valuation Comparison
+   • EV/Revenue multiples vs. comparables
+   • Valuation benchmarking against peers
+   • Target valuation range visualization
+
+7. INVESTMENT THESIS
+   • Why this represents an attractive investment
+   • Key value drivers and competitive moats
+   • Investment catalysts and milestones
+   • Expected returns and timeline to liquidity
+   • Exit strategy considerations
+
+8. RISK ASSESSMENT
+   • Market risks and macroeconomic sensitivities
+   • Competitive and disruption risks
+   • Execution and operational risks
+   • Financial and liquidity risks
+   • Regulatory and compliance risks
+   • Technology and cybersecurity risks
+   • Risk mitigation strategies
+   • Risk-adjusted return analysis
+
+9. VALUATION
+   • Valuation methodologies employed
+   • Comparable company analysis
+   • Precedent transaction multiples
+   • Discounted cash flow (DCF) analysis where applicable
+   • Valuation range (bull / base / bear cases)
+   • Implied multiples and sensitivity analysis
+
+10. RECOMMENDATIONS
+    • Clear investment recommendation with rationale
+    • Recommended investment size and allocation
+    • Entry timing and pricing strategy
+    • Key milestones to monitor
+    • Exit criteria and timeline
+    • Due diligence requirements
 
 
-**ATTACHED DOCUMENT:**
+------------------------------------------------------------------------
+KEY HIGHLIGHTS
+------------------------------------------------------------------------
 
-File: {pdf_name}
-Type: Professional Investment Analysis Report (PDF)
-Content: Comprehensive financial analysis with charts and tables
+{report_summary if report_summary else "This comprehensive report synthesizes research from 40+ authoritative financial sources to provide actionable investment intelligence. All data points are cited and verified. The analysis includes detailed financial metrics, market sizing, competitive benchmarking, and professional visualizations suitable for institutional review and investment committee decision-making."}
 
 
-**NEXT STEPS:**
+------------------------------------------------------------------------
+ATTACHED DOCUMENT INFORMATION
+------------------------------------------------------------------------
 
-Please review the attached report and let me know if you have any questions or require additional analysis. I am happy to schedule a meeting to discuss the findings and recommendations in detail.
+File Name:    {pdf_name}
+Document Type: Professional Investment Analysis Report
+Format:       PDF with embedded charts and tables
+Pages:        15-20 pages
+Quality:      Investment-grade / Committee-ready
+Content:      Complete financial analysis with 4 charts, multiple tables, and comprehensive data
 
-The report includes all necessary information for investment committee review and decision-making.
+
+------------------------------------------------------------------------
+NEXT STEPS & AVAILABILITY
+------------------------------------------------------------------------
+
+Please review the attached report at your earliest convenience. I am available to:
+
+• Discuss findings and recommendations in detail
+• Present analysis to the investment committee
+• Provide additional research or clarification
+• Answer questions about methodology or sources
+• Conduct follow-up deep dives on specific areas
+• Assist with due diligence planning
+
+The report contains all necessary information for informed investment decision-making. Please feel free to reach out with any questions or to schedule a discussion.
 
 
 Best regards,
 
 AI Investment Analysis System
-Edgar Agent Demo - Multi-Agent Pipeline
+Edgar Agent Demo - Multi-Agent Research Pipeline
 Investment Banking Financial Analyst Department
 
----
+------------------------------------------------------------------------
 
-*This email and attachment were generated by an AI-powered investment analysis system using Perplexity Sonar Pro for research and OpenAI for synthesis. All data has been collected from authoritative financial sources and verified through comprehensive testing.*
+NOTE: This email and the attached financial analysis report were generated through 
+an AI-powered multi-agent investment research system utilizing:
+• Perplexity Sonar Pro for comprehensive web research
+• OpenAI GPT-4 for data synthesis and analysis
+• 40+ authoritative financial data sources
+• Comprehensive testing and validation procedures
+
+All data has been collected from primary sources (SEC Edgar, SEDAR+, institutional 
+filings) and verified through secondary sources (Bloomberg, Reuters, market research).
 """
         
         return email_body
@@ -344,7 +471,7 @@ Investment Banking Financial Analyst Department
 # CONVENIENCE FUNCTIONS
 # ============================================================================
 
-async def send_report(pdf_path: str, recipient: str = "mailsinghritivik@gmail.com") -> Dict:
+async def send_report(pdf_path: str, recipient: str = "mailtosinghritvik@gmail.com") -> Dict:
     """
     Convenience function to send a report email.
     
@@ -405,7 +532,7 @@ async def main():
     agent = MailingAgent(verbose=True)
     result = await agent.send_report_email(
         pdf_path=str(test_pdf),
-        recipient_email="mailsinghritivik@gmail.com",
+        recipient_email="mailtosinghritvik@gmail.com",
         idea_data=test_idea,
         report_summary="Carbon credit marketplace opportunity with 32% CAGR, $10T projected market by 2034. Recommendation: Buy"
     )

@@ -22,7 +22,7 @@ async def main():
     print("Agent 1 → Agent 2 → Agent 3 → Agent 4 (Email Distribution)")
     print("="*100 + "\n")
     
-    print("⚠️  This will send real emails to mailsinghritivik@gmail.com\n")
+    print("⚠️  This will send real emails to mailtosinghritvik@gmail.com\n")
     
     # Run all tests
     summary = await run_all_complete_pipeline_tests()

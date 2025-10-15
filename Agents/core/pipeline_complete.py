@@ -65,7 +65,7 @@ class CompleteInvestmentPipeline:
         self,
         input_text: str,
         source: str = "unknown",
-        recipient_email: str = "mailsinghritivik@gmail.com",
+        recipient_email: str = "mailtosinghritvik@gmail.com",
         max_ideas_to_research: int = 1,
         max_reports_to_generate: int = 1,
         send_email: bool = True
@@ -356,7 +356,7 @@ class CompleteInvestmentPipeline:
 async def run_complete_pipeline(
     input_text: str,
     source: str = "unknown",
-    recipient: str = "mailsinghritivik@gmail.com",
+    recipient: str = "mailtosinghritvik@gmail.com",
     send_email: bool = True
 ) -> Dict:
     """
@@ -407,7 +407,7 @@ This could be a massive opportunity.
     result = await pipeline.process_input(
         input_text=test_input,
         source="test_whatsapp",
-        recipient_email="mailsinghritivik@gmail.com",
+        recipient_email="mailtosinghritvik@gmail.com",
         max_ideas_to_research=1,
         max_reports_to_generate=1,
         send_email=True  # Will actually send email!

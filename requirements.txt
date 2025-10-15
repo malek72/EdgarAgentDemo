@@ -1,11 +1,11 @@
 # Core dependencies for Edgar Agent Demo
-# Complete 4-Agent Investment Analysis Pipeline
+# Complete 3-Agent Investment Analysis Pipeline
 
 # ============================================================================
 # CORE DEPENDENCIES
 # ============================================================================
 
-# OpenAI SDK for Perplexity integration and Agent 4
+# OpenAI SDK for Perplexity integration
 openai>=2.0.0
 
 # Agents SDK (OpenAI Agents Python)
@@ -23,23 +23,17 @@ nest-asyncio>=1.6.0
 # AGENT 3: REPORT WRITER DEPENDENCIES
 # ============================================================================
 
-# PDF generation with reportlab (no system dependencies required)
-reportlab>=4.0.0
-
-# Charts and visualizations
-matplotlib>=3.7.0
-pandas>=2.0.0
-
-# Markdown conversion (optional - for alternative PDF method)
+# Markdown to HTML conversion
 markdown2>=2.5.0
 
-# ============================================================================
-# AGENT 4: MAILING AGENT DEPENDENCIES
-# ============================================================================
+# PDF generation (requires system libraries: brew install cairo pango gdk-pixbuf)
+# If system libraries not available, PDF generation will gracefully fail
+# Markdown reports will still be generated
+weasyprint>=60.0
 
-# Composio for Gmail integration
-composio-core>=0.1.0
-composio-openai>=0.1.0
+# Alternative PDF generator (no system dependencies)
+# Uncomment if weasyprint fails:
+# reportlab>=4.0.0
 
 # ============================================================================
 # OPTIONAL BUT RECOMMENDED
@@ -52,4 +46,9 @@ pytest-asyncio>=0.21.0
 # Utilities
 requests>=2.31.0
 aiohttp>=3.9.0
+
+# Data visualization (for future enhancements)
+# matplotlib>=3.7.0
+# pandas>=2.0.0
+# plotly>=5.18.0
 
