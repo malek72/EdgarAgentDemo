@@ -180,11 +180,11 @@ class ReportWriterAgent:
         Produce a MARKDOWN document with:
         - Clear section headers
         - Detailed analysis (minimum 5,000 words total)
-        - Data-driven insights
+        - Data-driven insights with CITATIONS
         - Professional formatting
         - Tables and structured data
         - Bullet points for clarity
-        - References to sources (from Agent 2 data)
+        - Source citations throughout [Source: X] or [1], [2], [3] format
         
         CRITICAL REQUIREMENTS:
         1. BE COMPREHENSIVE - This is for professional investment decisions
@@ -192,11 +192,17 @@ class ReportWriterAgent:
         3. BE ANALYTICAL - Synthesize insights, identify patterns
         4. BE SPECIFIC - Use exact numbers and data points
         5. BE PROFESSIONAL - Investment-grade quality
-        6. CITE SOURCES - Reference Agent 2's data collection
+        6. CITE SOURCES EXTENSIVELY - Add [Source: Name] or [1][2][3] citations after every claim
         7. BE ACTIONABLE - Clear recommendations
         8. CREATE FINANCIAL FIGURES - Describe tables and charts to be created
+        9. INCLUDE REFERENCES SECTION - List all sources at the end
         
-        Your analysis should enable investment committee decision-making.
+        CITATION STYLE:
+        - Cite data points: "Market size $838B growing to $10T by 2034 [Source: Polaris Market Research]"
+        - Use inline citations after facts
+        - Include References section at the end with all sources
+        
+        Your analysis should enable investment committee decision-making with full source attribution.
         """
         
         self.agent = Agent(
@@ -579,24 +585,29 @@ Begin your comprehensive financial analysis report now.
                 
                 # Bullet points
                 elif line.startswith('- ') or line.startswith('* '):
-                    # Clean the line for PDF
-                    clean_bullet = self._clean_for_pdf(line[2:])
+                    # Remove ** but keep content for bullets
+                    clean_bullet = line[2:].replace('**', '')
+                    clean_bullet = clean_bullet.replace('<', '(').replace('>', ')')
                     try:
                         pdf_story.append(Paragraph(f"• {clean_bullet}", bullet_style))
                     except:
-                        # If parsing fails, add as plain text
                         pass
                 
                 # Regular paragraphs
                 elif line and not line.startswith('---'):
-                    # Clean and format line for PDF
-                    clean_line = self._clean_for_pdf(line)
+                    # Remove ** and special chars for clean text
+                    clean_line = line.replace('**', '')
+                    clean_line = clean_line.replace('<', '(').replace('>', ')')
+                    clean_line = clean_line.replace('`', '')
+                    # Remove markdown links but keep text
+                    import re
+                    clean_line = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', clean_line)
+                    
                     try:
                         pdf_story.append(Paragraph(clean_line, body_style))
                     except Exception as e:
-                        # Skip lines that cause parsing errors
                         if self.verbose:
-                            print(f"[DEBUG] Skipped problematic line: {line[:50]}...")
+                            print(f"[DEBUG] Skipped line: {line[:50]}...")
                 
                 i += 1
             
