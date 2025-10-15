@@ -1,0 +1,42 @@
+{
+  "test_name": "whatsapp_2_casual_mention",
+  "input": {
+    "source": "whatsapp",
+    "text": "\nCoffee tomorrow? \u2615\n\nBtw I was talking to my neighbor yesterday - he runs a small construction \ncompany and he's been complaining about how hard it is to find reliable \nworkers. He uses some old software from like 2010 to manage projects and \nscheduling. Said he'd pay good money for something modern that actually \nworks on mobile.\n\nAnyway, see you tomorrow at 10?\n        "
+  },
+  "output": {
+    "ideas_found": [
+      {
+        "idea": "Development of a modern, mobile-first construction project management and scheduling software targeting small and medium-sized construction companies.",
+        "source_context": "He runs a small construction company and he's been complaining about how hard it is to find reliable workers. He uses some old software from like 2010 to manage projects and scheduling. Said he'd pay good money for something modern that actually works on mobile.",
+        "category": "business_opportunity",
+        "market_sector": "Construction Technology / Software as a Service (SaaS)",
+        "validation": {
+          "market_viability": "High. The construction management software market is growing rapidly, expected to reach $17.9 billion by 2035 at a CAGR of 9.1%. There is strong demand for modern, mobile-accessible, cloud-based solutions, especially among small and medium-sized enterprises. The need for user-friendly platforms compatible with field work is particularly acute in the SMB segment.",
+          "recent_developments": "Recent reports emphasize rapid digitalization in construction management, with cloud-based and mobile-first platforms becoming industry standards. Mobile apps that allow real-time reporting, scheduling, and communication are seen as valuable for field teams, with the majority of new deployments being cloud/SaaS and mobile-integrated.[5][3]",
+          "key_metrics": "Global construction and design software market: $10.96B (2024), projected $11.67B (2025), $19.1B (2030), CAGR 10.4% (2025-2030)[3]. Construction management software specifically: $7.5B (2025), $17.9B (2035), CAGR 9.1%[5]. Mobile-focused platforms and the cloud deployment sector are expected to make up over 61.3% of market share by 2025.[5]",
+          "competitors": "Major vendors include Procore, Autodesk Construction Cloud, Buildertrend, PlanGrid, and CoConstruct. While these solutions exist, many SMBs remain underserved, often due to high costs, complexity, or lack of truly mobile-native apps. The opportunity lies in developing a lower-cost, intuitive solution specifically tuned for small contractors and easy mobile adoption.[4][5]",
+          "feasibility_score": 8,
+          "explanation": "The market is well-established, rapidly growing, and demonstrates a clear demand (especially from SMBs) for improved, mobile-centric solutions. Existing competitors are significant but focused mostly on large enterprises or offer complex, costly products. A targeted, affordable, user-friendly, and mobile-first approach addresses a validated pain point and market gap."
+        },
+        "sources": [
+          "https://www.grandviewresearch.com/industry-analysis/construction-design-software-market-report",
+          "https://www.futuremarketinsights.com/reports/construction-management-software-market",
+          "https://www.verdantix.com/venture/report/green-quadrant-construction-management-software-cms-2025",
+          "https://www.marketsandmarkets.com/Market-Reports/construction-project-management-software-market-232539827.html",
+          "https://scoop.market.us/construction-software-statistics/"
+        ],
+        "next_steps": "Conduct detailed user interviews with small contractors to refine product requirements. Analyze gaps in current solutions (ease of use, pricing, mobile UX). Build an MVP with core scheduling, task management, worker communication, and real-time mobile updates. Pilot with target customers and collect feedback. Explore partnerships with construction industry associations and local trade groups for adoption and scaling."
+      }
+    ],
+    "summary": "A validated business opportunity exists in providing modern, mobile-first construction management software targeted at small and medium businesses. The market is experiencing strong, sustained growth, with significant demand for user-friendly mobile solutions. While established players exist, SMBs remain underserved, presenting a viable path for new entrants.",
+    "confidence": "high",
+    "metadata": {
+      "source": "whatsapp",
+      "timestamp": "2025-10-14T22:44:15.576741",
+      "model": "sonar-pro",
+      "status": "success"
+    }
+  },
+  "timestamp": "2025-10-14T22:44:15.577707"
+}

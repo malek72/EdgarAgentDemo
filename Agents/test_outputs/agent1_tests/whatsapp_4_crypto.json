@@ -1,0 +1,113 @@
+{
+  "test_name": "whatsapp_4_crypto",
+  "input": {
+    "source": "whatsapp",
+    "text": "\nDid you see Bitcoin just crossed $45K? \ud83d\udcc8\n\nBut real talk - the interesting play isn't crypto itself anymore, it's the \ninfrastructure. Look at what Alchemy did (valued at $10B+). They're basically \nAWS for blockchain developers.\n\nI'm hearing there's huge demand for:\n- Wallet-as-a-service APIs\n- NFT authentication tools for brands\n- On-chain analytics platforms\n\nBanks are finally getting serious about crypto custody too. That's a \nmulti-billion dollar market waiting to happen.\n        "
+  },
+  "output": {
+    "ideas_found": [
+      {
+        "idea": "Blockchain infrastructure provider platforms, offering AWS-style services for blockchain developers (e.g., developer APIs, node hosting, scalable environments).",
+        "source_context": "Look at what Alchemy did (valued at $10B+). They're basically AWS for blockchain developers.",
+        "category": "business_opportunity",
+        "market_sector": "Blockchain Infrastructure/Cloud Computing",
+        "validation": {
+          "market_viability": "Very high: Blockchain infrastructure is a foundational need as blockchain adoption grows. Infrastructure providers expected to command 42.7% of blockchain provider market share in 2025.",
+          "recent_developments": "Alchemy raised large funding rounds, is valued at over $10B, and the sector is experiencing significant VC interest with $10 billion invested in Q2 2025 alone.",
+          "key_metrics": "Global blockchain market expected at $57.7B in 2025 and $393B-$1.4T by 2030. Infrastructure segment leading with 42.7% market share in 2025.",
+          "competitors": "Alchemy, Infura, QuickNode, Chainstack, AWS Managed Blockchain.",
+          "feasibility_score": "9 - Market already demonstrating high growth, concrete demand, and successful scale-ups."
+        },
+        "sources": [
+          "https://www.gminsights.com/industry-analysis/blockchain-technology-market",
+          "https://coinledger.io/research/global-blockchain-market-size",
+          "https://www.marketsandmarkets.com/PressReleases/blockchain-technology.asp"
+        ],
+        "next_steps": "Analyze developer adoption rates, assess pricing strategies, evaluate region-specific regulatory risks. Screen for upcoming infrastructure providers and potential partnership synergies."
+      },
+      {
+        "idea": "Wallet-as-a-service API platforms\u2014for fintechs, exchanges, brands, and DApps requiring secure, turnkey wallet and identity management.",
+        "source_context": "- Wallet-as-a-service APIs",
+        "category": "business_opportunity",
+        "market_sector": "Fintech/Blockchain Security",
+        "validation": {
+          "market_viability": "Strong: Growing interoperability, embedded finance, and consumer crypto access trends.",
+          "recent_developments": "Many exchanges and consumer brands are seeking white-label custodial and non-custodial wallet solutions. Banks' entry into crypto custody also feeding demand.",
+          "key_metrics": "Crypto custody market projected as multi-billion dollar sector; enterprise blockchain adoption led by large orgs (66.3% market share in 2025).",
+          "competitors": "Fireblocks, BitGo, Anchorage, Coinbase Custody, MetaMask Institutional API.",
+          "feasibility_score": "8 - Regulatory clarity and cybersecurity challenges remain but strong B2B and B2C need exists."
+        },
+        "sources": [
+          "https://coinledger.io/research/global-blockchain-market-size",
+          "https://www.tekrevol.com/blogs/blockchain-statistics-facts/",
+          "https://www.futuremarketinsights.com/reports/blockchain-market"
+        ],
+        "next_steps": "Explore key vertical use cases (banking, gaming, retail), evaluate API integration complexity, review KYC/AML requirements, identify potential anchor clients."
+      },
+      {
+        "idea": "NFT authentication and verification tools/platforms for brands\u2014enabling trusted digital asset verification and fraud prevention.",
+        "source_context": "- NFT authentication tools for brands",
+        "category": "business_opportunity",
+        "market_sector": "Digital Identity/Brand Protection/Blockchain",
+        "validation": {
+          "market_viability": "Growing: Brands increasingly use NFTs for product authentication, loyalty, and IP protection.",
+          "recent_developments": "Global brands integrating on-chain verification for digital collectibles, brand engagement. NFT fraud and counterfeiting are rising concerns.",
+          "key_metrics": "NFT sales exceeded $40B in prior cycles. Blockchain in marketing/brand protection is a recognized sub-market.",
+          "competitors": "Immutable, Authentify, Verisart, Origin Protocol.",
+          "feasibility_score": "7 - Market is emerging, regulatory and scalability factors under evaluation, but brand demand for Web3 authentication is real."
+        },
+        "sources": [
+          "https://coinledger.io/research/global-blockchain-market-size",
+          "https://www.albanybeck.com/news-and-insights/demystifying-blockchain-understanding-applications-and-the-promising-future"
+        ],
+        "next_steps": "Survey brand adoption, review NFT fraud statistics, scan B2B partnership opportunities, assess interoperability with major NFT marketplaces."
+      },
+      {
+        "idea": "On-chain analytics platforms\u2014for compliance, transaction tracking, market intelligence, anti-money laundering (AML), and risk management.",
+        "source_context": "- On-chain analytics platforms",
+        "category": "business_opportunity",
+        "market_sector": "RegTech/Analytics/Blockchain Security",
+        "validation": {
+          "market_viability": "Very high: Regulation, compliance, and transparency are core needs as institutional players enter crypto.",
+          "recent_developments": "Banks entering crypto custody, financial regulators demanding robust transaction tracking and AML/KYC analytics.",
+          "key_metrics": "$30B+ blockchain analytics market projected by mid-2020s; institutional adoption driving growth.",
+          "competitors": "Chainalysis, Elliptic, TRM Labs, BlockSeer.",
+          "feasibility_score": "9 - Regulatory adoption mandatory, institutional customers have budget, established product-market fit."
+        },
+        "sources": [
+          "https://www.gminsights.com/industry-analysis/blockchain-technology-market",
+          "https://www.marketsandmarkets.com/PressReleases/blockchain-technology.asp"
+        ],
+        "next_steps": "Map regulatory trends, review analytics API modularity, benchmark data coverage, scan for platform acquisition or legacy integration plays."
+      },
+      {
+        "idea": "Crypto custody services for banks, institutions, and enterprises\u2014secure storage, compliance, and management of digital assets.",
+        "source_context": "Banks are finally getting serious about crypto custody too. That's a multi-billion dollar market waiting to happen.",
+        "category": "investment_opportunity",
+        "market_sector": "Financial Services/Blockchain Security",
+        "validation": {
+          "market_viability": "Exceptional: Major financial institutions accelerating entry into crypto asset custody as regulations clarify.",
+          "recent_developments": "Banks, asset managers launching direct custodial services; government endorsement in key regions (India, EU, US); custody providers raising large VC rounds.",
+          "key_metrics": "Crypto custody market estimated at multi-billion dollar scale; large enterprise adoption (66.3% of blockchain revenue in 2025).",
+          "competitors": "Anchorage Digital, Fireblocks, BitGo, Coinbase Custody, BNY Mellon, State Street.",
+          "feasibility_score": "9 - Regulatory momentum, institutional demand, and proven business models for B2B and B2C custody."
+        },
+        "sources": [
+          "https://www.marketsandmarkets.com/PressReleases/blockchain-technology.asp",
+          "https://coinledger.io/research/global-blockchain-market-size",
+          "https://www.futuremarketinsights.com/reports/blockchain-market"
+        ],
+        "next_steps": "Track regulatory announcements, analyze custody provider financials, benchmark security certifications, identify potential acquisition targets or partnership entry points."
+      }
+    ],
+    "summary": "The analyzed text reveals robust, actionable business opportunities and investment plays in blockchain infrastructure (AWS-style platforms for developers), wallet-as-a-service APIs, NFT authentication tools for brands, on-chain analytics, and institutional crypto custody. All sectors exhibit high growth potential and are validated by recent market metrics, VC investments, and fast-moving competitor landscapes.",
+    "confidence": "high",
+    "metadata": {
+      "source": "whatsapp",
+      "timestamp": "2025-10-14T22:46:05.277111",
+      "model": "sonar-pro",
+      "status": "success"
+    }
+  },
+  "timestamp": "2025-10-14T22:46:05.278034"
+}

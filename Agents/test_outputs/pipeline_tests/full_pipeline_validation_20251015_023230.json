@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-10-15T02:32:30.811514",
+  "total_tests": 3,
+  "passed": 3,
+  "validations": [
+    {
+      "test_name": "test1_carbon_marketplace",
+      "checks": {
+        "agent1_executed": true,
+        "agent1_ideas": 1,
+        "agent2_executed": true,
+        "agent2_success": true,
+        "agent2_markdown": true,
+        "agent3_executed": true,
+        "agent3_success": true,
+        "report_markdown": true,
+        "report_pdf": true,
+        "report_word_count": 3583
+      },
+      "overall_pass": true
+    },
+    {
+      "test_name": "test3_ai_customer_support",
+      "checks": {
+        "agent1_executed": true,
+        "agent1_ideas": 1,
+        "agent2_executed": true,
+        "agent2_success": true,
+        "agent2_markdown": true,
+        "agent3_executed": true,
+        "agent3_success": true,
+        "report_markdown": true,
+        "report_pdf": true,
+        "report_word_count": 3787
+      },
+      "overall_pass": true
+    },
+    {
+      "test_name": "test2_vertical_farming",
+      "checks": {
+        "agent1_executed": true,
+        "agent1_ideas": 1,
+        "agent2_executed": true,
+        "agent2_success": true,
+        "agent2_markdown": true,
+        "agent3_executed": true,
+        "agent3_success": true,
+        "report_markdown": true,
+        "report_pdf": true,
+        "report_word_count": 3957
+      },
+      "overall_pass": true
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "timestamp": "2025-10-15T01:31:11.779864",
+  "total_tests": 5,
+  "passed": 5,
+  "validations": [
+    {
+      "test_name": "whatsapp_fintech",
+      "checks": {
+        "agent1_executed": true,
+        "ideas_extracted": true,
+        "ideas_count": 5,
+        "agent2_executed": true,
+        "data_collected": true,
+        "has_data_collection": true,
+        "pipeline_completed": true
+      },
+      "overall_pass": true
+    },
+    {
+      "test_name": "tweet_ai_agents",
+      "checks": {
+        "agent1_executed": true,
+        "ideas_extracted": true,
+        "ideas_count": 2,
+        "agent2_executed": true,
+        "data_collected": true,
+        "has_data_collection": true,
+        "pipeline_completed": true
+      },
+      "overall_pass": true
+    },
+    {
+      "test_name": "whatsapp_carbon_marketplace",
+      "checks": {
+        "agent1_executed": true,
+        "ideas_extracted": true,
+        "ideas_count": 1,
+        "agent2_executed": true,
+        "data_collected": true,
+        "has_data_collection": true,
+        "pipeline_completed": true
+      },
+      "overall_pass": true
+    },
+    {
+      "test_name": "email_healthcare",
+      "checks": {
+        "agent1_executed": true,
+        "ideas_extracted": true,
+        "ideas_count": 2,
+        "agent2_executed": true,
+        "data_collected": true,
+        "has_data_collection": true,
+        "pipeline_completed": true
+      },
+      "overall_pass": true
+    },
+    {
+      "test_name": "email_explicit_startup",
+      "checks": {
+        "agent1_executed": true,
+        "ideas_extracted": true,
+        "ideas_count": 2,
+        "agent2_executed": true,
+        "data_collected": true,
+        "has_data_collection": true,
+        "pipeline_completed": true
+      },
+      "overall_pass": true
+    }
+  ]
+}

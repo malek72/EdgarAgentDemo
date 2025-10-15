@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-15T01:31:11.771023",
+  "total_tests": 5,
+  "passed": 5,
+  "failed": 0,
+  "success_rate": "100.0%",
+  "total_ideas_extracted": 12,
+  "total_ideas_researched": 5,
+  "avg_ideas_per_test": "2.40",
+  "total_duration": 370.075052,
+  "avg_duration_per_test": "74.02s",
+  "test_results": {
+    "email_explicit_startup": {
+      "status": "success",
+      "duration": 85.943355,
+      "ideas_extracted": 2,
+      "ideas_researched": 1
+    },
+    "whatsapp_carbon_marketplace": {
+      "status": "success",
+      "duration": 63.330383,
+      "ideas_extracted": 1,
+      "ideas_researched": 1
+    },
+    "tweet_ai_agents": {
+      "status": "success",
+      "duration": 55.223075,
+      "ideas_extracted": 2,
+      "ideas_researched": 1
+    },
+    "email_healthcare": {
+      "status": "success",
+      "duration": 100.363144,
+      "ideas_extracted": 2,
+      "ideas_researched": 1
+    },
+    "whatsapp_fintech": {
+      "status": "success",
+      "duration": 65.215095,
+      "ideas_extracted": 5,
+      "ideas_researched": 1
+    }
+  }
+}
