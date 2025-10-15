@@ -1,0 +1,12 @@
+python-dotenv
+supabase
+fastapi
+uvicorn
+requests
+pydantic
+imaplib2
+beautifulsoup4
+lxml
+pandas
+schedule
+tweepy

@@ -1,0 +1,150 @@
+2025-10-15 18:46:07,222 - twitter_scraper - INFO - Database setup completed
+2025-10-15 18:46:07,224 - twitter_scraper - INFO - Scraping specific tweet: https://x.com/elonmusk/status/1812258574049157405
+2025-10-15 18:46:07,224 - twitter_scraper - INFO - Trying to scrape specific tweet from https://nitter.net/elonmusk/status/1812258574049157405
+2025-10-15 18:46:08,954 - twitter_scraper - INFO - Trying to scrape specific tweet from https://nitter.it/elonmusk/status/1812258574049157405
+2025-10-15 18:46:13,236 - twitter_scraper - INFO - Trying to scrape specific tweet from https://nitter.1d4.us/elonmusk/status/1812258574049157405
+2025-10-15 18:46:13,374 - twitter_scraper - WARNING - Failed to scrape tweet 1812258574049157405 from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /elonmusk/status/1812258574049157405 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000018D5F8D6210>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:46:13,391 - twitter_scraper - INFO - Creating mock tweet data for ID: 1812258574049157405
+2025-10-15 18:46:13,525 - twitter_scraper - INFO - Successfully scraped specific tweet: 1812258574049157405
+2025-10-15 18:46:14,550 - twitter_scraper - INFO - Scraping tweets for elonmusk
+2025-10-15 18:46:14,590 - twitter_scraper - INFO - Trying to scrape from https://nitter.net/elonmusk
+2025-10-15 18:46:16,350 - twitter_scraper - INFO - Trying to scrape from https://nitter.it/elonmusk
+2025-10-15 18:46:18,750 - twitter_scraper - INFO - Trying to scrape from https://nitter.1d4.us/elonmusk
+2025-10-15 18:46:18,797 - twitter_scraper - WARNING - Failed to scrape from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000018D5F8D7B10>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:46:25,162 - twitter_scraper - INFO - Alternative scraping method attempted
+2025-10-15 18:46:25,187 - twitter_scraper - WARNING - No tweets found for elonmusk, using fallback method
+2025-10-15 18:46:25,223 - twitter_scraper - INFO - Using fallback method for elonmusk
+2025-10-15 18:46:25,223 - twitter_scraper - INFO - Successfully scraped 3 tweets for elonmusk
+2025-10-15 18:46:25,258 - twitter_scraper - INFO - Database setup completed
+2025-10-15 18:46:25,700 - twitter_scraper - INFO - Database setup completed
+2025-10-15 18:46:25,766 - twitter_scraper - INFO - Trying to scrape from https://nitter.net/elonmusk
+2025-10-15 18:46:27,596 - twitter_scraper - INFO - Trying to scrape from https://nitter.it/elonmusk
+2025-10-15 18:46:30,071 - twitter_scraper - INFO - Trying to scrape from https://nitter.1d4.us/elonmusk
+2025-10-15 18:46:30,171 - twitter_scraper - WARNING - Failed to scrape from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000018D5F914410>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:48:12,654 - twitter_scraper - INFO - Database setup completed
+2025-10-15 18:48:12,666 - twitter_scraper - INFO - Scraping specific tweet: https://x.com/elonmusk/status/1812258574049157405
+2025-10-15 18:48:12,672 - twitter_scraper - INFO - Trying to scrape specific tweet from https://nitter.net/elonmusk/status/1812258574049157405
+2025-10-15 18:48:14,951 - twitter_scraper - INFO - Trying to scrape specific tweet from https://nitter.it/elonmusk/status/1812258574049157405
+2025-10-15 18:48:17,963 - twitter_scraper - INFO - Trying to scrape specific tweet from https://nitter.1d4.us/elonmusk/status/1812258574049157405
+2025-10-15 18:48:17,984 - twitter_scraper - WARNING - Failed to scrape tweet 1812258574049157405 from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /elonmusk/status/1812258574049157405 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0D2B76210>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:48:18,038 - twitter_scraper - INFO - Creating mock tweet data for ID: 1812258574049157405
+2025-10-15 18:48:18,039 - twitter_scraper - INFO - Successfully scraped specific tweet: 1812258574049157405
+2025-10-15 18:48:18,058 - twitter_scraper - INFO - Scraping tweets for elonmusk
+2025-10-15 18:48:18,058 - twitter_scraper - INFO - Trying to scrape from https://nitter.net/elonmusk
+2025-10-15 18:48:19,666 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-10-15 18:48:19,689 - twitter_scraper - WARNING - No tweets found from https://nitter.net
+2025-10-15 18:48:19,705 - twitter_scraper - INFO - Trying to scrape from https://nitter.it/elonmusk
+2025-10-15 18:48:23,706 - twitter_scraper - WARNING - No tweets found from https://nitter.it
+2025-10-15 18:48:23,747 - twitter_scraper - INFO - Trying to scrape from https://nitter.cz/elonmusk
+2025-10-15 18:48:28,327 - twitter_scraper - WARNING - No tweets found from https://nitter.cz
+2025-10-15 18:48:28,333 - twitter_scraper - INFO - Trying to scrape from https://nitter.fdn.fr/elonmusk
+2025-10-15 18:48:28,529 - twitter_scraper - WARNING - Failed to scrape from https://nitter.fdn.fr: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0CEFA4CD0>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:48:28,551 - twitter_scraper - INFO - Trying to scrape from https://nitter.1d4.us/elonmusk
+2025-10-15 18:48:28,658 - twitter_scraper - WARNING - Failed to scrape from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0D2B77610>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:48:32,968 - twitter_scraper - INFO - Alternative scraping method attempted
+2025-10-15 18:48:32,975 - twitter_scraper - WARNING - No tweets found for elonmusk, using fallback method
+2025-10-15 18:48:32,983 - twitter_scraper - INFO - Using fallback method for elonmusk
+2025-10-15 18:48:32,989 - twitter_scraper - INFO - Successfully scraped 3 tweets for elonmusk
+2025-10-15 18:48:33,047 - twitter_scraper - INFO - Starting scraping cycle for elonmusk
+2025-10-15 18:48:33,674 - httpx - INFO - HTTP Request: GET https://tgendmgdrljuxxxyynpz.supabase.co/rest/v1/tweets?select=tweet_id&username=eq.elonmusk&order=created_at.desc&limit=1 "HTTP/1.1 200 OK"
+2025-10-15 18:48:33,689 - twitter_scraper - INFO - Scraping tweets for elonmusk
+2025-10-15 18:48:33,690 - twitter_scraper - INFO - Trying to scrape from https://nitter.net/elonmusk
+2025-10-15 18:48:35,280 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-10-15 18:48:35,287 - twitter_scraper - WARNING - No tweets found from https://nitter.net
+2025-10-15 18:48:35,288 - twitter_scraper - INFO - Trying to scrape from https://nitter.it/elonmusk
+2025-10-15 18:48:38,289 - twitter_scraper - WARNING - No tweets found from https://nitter.it
+2025-10-15 18:48:38,303 - twitter_scraper - INFO - Trying to scrape from https://nitter.cz/elonmusk
+2025-10-15 18:48:42,107 - twitter_scraper - WARNING - No tweets found from https://nitter.cz
+2025-10-15 18:48:42,150 - twitter_scraper - INFO - Trying to scrape from https://nitter.fdn.fr/elonmusk
+2025-10-15 18:48:42,172 - twitter_scraper - WARNING - Failed to scrape from https://nitter.fdn.fr: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0CEFA4CD0>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:48:42,207 - twitter_scraper - INFO - Trying to scrape from https://nitter.1d4.us/elonmusk
+2025-10-15 18:48:42,283 - twitter_scraper - WARNING - Failed to scrape from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0D2B76990>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:48:46,086 - twitter_scraper - INFO - Alternative scraping method attempted
+2025-10-15 18:48:46,156 - twitter_scraper - WARNING - No tweets found for elonmusk, using fallback method
+2025-10-15 18:48:46,237 - twitter_scraper - INFO - Using fallback method for elonmusk
+2025-10-15 18:48:46,330 - twitter_scraper - INFO - Successfully scraped 0 tweets for elonmusk
+2025-10-15 18:48:46,387 - twitter_scraper - INFO - Scraping cycle completed: {'username': 'elonmusk', 'tweets_scraped': 0, 'tweets_saved': 0, 'duration_seconds': 13.3406, 'timestamp': '2025-10-15T18:48:46.387463', 'success': False}
+2025-10-15 18:48:46,966 - twitter_scraper - INFO - Database setup completed
+2025-10-15 18:48:47,664 - twitter_scraper - INFO - Database setup completed
+2025-10-15 18:48:47,672 - twitter_scraper - INFO - Trying to scrape from https://nitter.net/elonmusk
+2025-10-15 18:48:49,394 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-10-15 18:48:49,397 - twitter_scraper - WARNING - No tweets found from https://nitter.net
+2025-10-15 18:48:49,398 - twitter_scraper - INFO - Trying to scrape from https://nitter.it/elonmusk
+2025-10-15 18:48:51,797 - twitter_scraper - WARNING - No tweets found from https://nitter.it
+2025-10-15 18:48:51,807 - twitter_scraper - INFO - Trying to scrape from https://nitter.cz/elonmusk
+2025-10-15 18:48:56,489 - twitter_scraper - WARNING - No tweets found from https://nitter.cz
+2025-10-15 18:48:56,522 - twitter_scraper - INFO - Trying to scrape from https://nitter.fdn.fr/elonmusk
+2025-10-15 18:48:56,652 - twitter_scraper - WARNING - Failed to scrape from https://nitter.fdn.fr: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0D2B76850>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 18:48:56,768 - twitter_scraper - INFO - Trying to scrape from https://nitter.1d4.us/elonmusk
+2025-10-15 18:48:56,836 - twitter_scraper - WARNING - Failed to scrape from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /elonmusk (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001F0D2B76350>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:17:37,447 - twitter_scraper - INFO - Database setup completed
+2025-10-15 19:17:37,457 - twitter_scraper - INFO - Starting scraping cycle for dealintcb
+2025-10-15 19:17:37,816 - httpx - INFO - HTTP Request: GET https://tgendmgdrljuxxxyynpz.supabase.co/rest/v1/tweets?select=tweet_id&username=eq.dealintcb&order=created_at.desc&limit=1 "HTTP/1.1 200 OK"
+2025-10-15 19:17:37,859 - twitter_scraper - INFO - Scraping tweets for dealintcb
+2025-10-15 19:17:37,871 - twitter_scraper - INFO - Trying to scrape from https://nitter.net/dealintcb
+2025-10-15 19:17:39,571 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-10-15 19:17:39,670 - twitter_scraper - WARNING - No tweets found from https://nitter.net
+2025-10-15 19:17:39,804 - twitter_scraper - INFO - Trying to scrape from https://nitter.it/dealintcb
+2025-10-15 19:17:43,143 - twitter_scraper - WARNING - No tweets found from https://nitter.it
+2025-10-15 19:17:43,171 - twitter_scraper - INFO - Trying to scrape from https://nitter.cz/dealintcb
+2025-10-15 19:17:47,951 - twitter_scraper - WARNING - No tweets found from https://nitter.cz
+2025-10-15 19:17:47,970 - twitter_scraper - INFO - Trying to scrape from https://nitter.fdn.fr/dealintcb
+2025-10-15 19:17:47,989 - twitter_scraper - WARNING - Failed to scrape from https://nitter.fdn.fr: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /dealintcb (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000283339316D0>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:17:48,025 - twitter_scraper - INFO - Trying to scrape from https://nitter.1d4.us/dealintcb
+2025-10-15 19:17:48,279 - twitter_scraper - WARNING - Failed to scrape from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /dealintcb (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028333933610>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:17:48,359 - twitter_scraper - INFO - Trying RSS from https://nitter.net/dealintcb/rss
+2025-10-15 19:17:50,911 - twitter_scraper - INFO - Trying RSS from https://nitter.net/dealintcb/atom
+2025-10-15 19:17:53,162 - twitter_scraper - WARNING - HTTP 429 from https://nitter.net/dealintcb/atom
+2025-10-15 19:17:53,191 - twitter_scraper - INFO - Trying RSS from https://nitter.it/dealintcb/rss
+2025-10-15 19:17:55,692 - twitter_scraper - INFO - Trying RSS from https://nitter.it/dealintcb/atom
+2025-10-15 19:18:01,562 - twitter_scraper - INFO - Trying RSS from https://nitter.cz/dealintcb/rss
+2025-10-15 19:18:06,153 - twitter_scraper - INFO - Trying RSS from https://nitter.cz/dealintcb/atom
+2025-10-15 19:18:10,425 - twitter_scraper - INFO - Trying RSS from https://nitter.fdn.fr/dealintcb/rss
+2025-10-15 19:18:10,452 - twitter_scraper - WARNING - Failed RSS from https://nitter.fdn.fr/rss: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /dealintcb/rss (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028333932710>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:18:10,455 - twitter_scraper - INFO - Trying RSS from https://nitter.fdn.fr/dealintcb/atom
+2025-10-15 19:18:10,522 - twitter_scraper - WARNING - Failed RSS from https://nitter.fdn.fr/atom: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /dealintcb/atom (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028333931F90>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:18:10,654 - twitter_scraper - INFO - Trying RSS from https://nitter.1d4.us/dealintcb/rss
+2025-10-15 19:18:10,807 - twitter_scraper - WARNING - Failed RSS from https://nitter.1d4.us/rss: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /dealintcb/rss (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028333932990>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:18:10,822 - twitter_scraper - INFO - Trying RSS from https://nitter.1d4.us/dealintcb/atom
+2025-10-15 19:18:10,826 - twitter_scraper - WARNING - Failed RSS from https://nitter.1d4.us/atom: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /dealintcb/atom (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000028333933610>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:18:15,438 - twitter_scraper - INFO - Alternative scraping method attempted
+2025-10-15 19:18:15,458 - twitter_scraper - WARNING - No tweets found for dealintcb, using fallback method
+2025-10-15 19:18:15,494 - twitter_scraper - INFO - Using fallback method for dealintcb
+2025-10-15 19:18:15,623 - twitter_scraper - INFO - Successfully scraped 3 tweets for dealintcb
+2025-10-15 19:18:16,213 - httpx - INFO - HTTP Request: POST https://tgendmgdrljuxxxyynpz.supabase.co/rest/v1/tweets "HTTP/1.1 201 Created"
+2025-10-15 19:18:16,240 - twitter_scraper - INFO - Successfully saved 3 tweets to database
+2025-10-15 19:18:16,338 - twitter_scraper - INFO - Scraping cycle completed: {'username': 'dealintcb', 'tweets_scraped': 3, 'tweets_saved': 3, 'duration_seconds': 38.880456, 'timestamp': '2025-10-15T19:18:16.338001', 'success': True}
+2025-10-15 19:26:08,240 - twitter_scraper - INFO - Database setup completed
+2025-10-15 19:26:08,306 - twitter_scraper - INFO - Starting scraping cycle for dealintcb
+2025-10-15 19:26:08,711 - httpx - INFO - HTTP Request: GET https://tgendmgdrljuxxxyynpz.supabase.co/rest/v1/tweets?select=tweet_id&username=eq.dealintcb&order=created_at.desc&limit=1 "HTTP/1.1 200 OK"
+2025-10-15 19:26:08,936 - twitter_scraper - INFO - Scraping tweets for dealintcb
+2025-10-15 19:26:08,937 - twitter_scraper - INFO - Trying to scrape from https://nitter.net/dealintcb
+2025-10-15 19:26:12,609 - bs4.dammit - WARNING - Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+2025-10-15 19:26:12,622 - twitter_scraper - WARNING - No tweets found from https://nitter.net
+2025-10-15 19:26:12,623 - twitter_scraper - INFO - Trying to scrape from https://nitter.it/dealintcb
+2025-10-15 19:26:17,852 - twitter_scraper - WARNING - No tweets found from https://nitter.it
+2025-10-15 19:26:18,171 - twitter_scraper - INFO - Trying to scrape from https://nitter.cz/dealintcb
+2025-10-15 19:26:30,329 - twitter_scraper - WARNING - No tweets found from https://nitter.cz
+2025-10-15 19:26:30,521 - twitter_scraper - INFO - Trying to scrape from https://nitter.fdn.fr/dealintcb
+2025-10-15 19:26:30,538 - twitter_scraper - WARNING - Failed to scrape from https://nitter.fdn.fr: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /dealintcb (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020C238116D0>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:26:30,657 - twitter_scraper - INFO - Trying to scrape from https://nitter.1d4.us/dealintcb
+2025-10-15 19:26:31,573 - twitter_scraper - WARNING - Failed to scrape from https://nitter.1d4.us: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /dealintcb (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020C23813610>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:26:31,873 - twitter_scraper - INFO - Trying RSS from https://nitter.net/dealintcb/rss
+2025-10-15 19:26:33,658 - twitter_scraper - INFO - Trying RSS from https://nitter.net/dealintcb/atom
+2025-10-15 19:26:35,317 - twitter_scraper - WARNING - HTTP 429 from https://nitter.net/dealintcb/atom
+2025-10-15 19:26:35,358 - twitter_scraper - INFO - Trying RSS from https://nitter.it/dealintcb/rss
+2025-10-15 19:26:38,498 - twitter_scraper - INFO - Trying RSS from https://nitter.it/dealintcb/atom
+2025-10-15 19:26:41,241 - twitter_scraper - INFO - Trying RSS from https://nitter.cz/dealintcb/rss
+2025-10-15 19:26:45,502 - twitter_scraper - INFO - Trying RSS from https://nitter.cz/dealintcb/atom
+2025-10-15 19:26:49,403 - twitter_scraper - INFO - Trying RSS from https://nitter.fdn.fr/dealintcb/rss
+2025-10-15 19:26:49,408 - twitter_scraper - WARNING - Failed RSS from https://nitter.fdn.fr/rss: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /dealintcb/rss (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020C23812710>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:26:49,412 - twitter_scraper - INFO - Trying RSS from https://nitter.fdn.fr/dealintcb/atom
+2025-10-15 19:26:49,417 - twitter_scraper - WARNING - Failed RSS from https://nitter.fdn.fr/atom: HTTPSConnectionPool(host='nitter.fdn.fr', port=443): Max retries exceeded with url: /dealintcb/atom (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020C23811F90>: Failed to resolve 'nitter.fdn.fr' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:26:49,425 - twitter_scraper - INFO - Trying RSS from https://nitter.1d4.us/dealintcb/rss
+2025-10-15 19:26:49,486 - twitter_scraper - WARNING - Failed RSS from https://nitter.1d4.us/rss: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /dealintcb/rss (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020C23812990>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:26:49,504 - twitter_scraper - INFO - Trying RSS from https://nitter.1d4.us/dealintcb/atom
+2025-10-15 19:26:49,507 - twitter_scraper - WARNING - Failed RSS from https://nitter.1d4.us/atom: HTTPSConnectionPool(host='nitter.1d4.us', port=443): Max retries exceeded with url: /dealintcb/atom (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000020C23813610>: Failed to resolve 'nitter.1d4.us' ([Errno 11001] getaddrinfo failed)"))
+2025-10-15 19:26:53,466 - twitter_scraper - INFO - Alternative scraping method attempted
+2025-10-15 19:26:53,559 - twitter_scraper - WARNING - No tweets found for dealintcb; demo fallback disabled, returning empty list
+2025-10-15 19:26:53,683 - twitter_scraper - INFO - Successfully scraped 0 tweets for dealintcb
+2025-10-15 19:26:53,771 - twitter_scraper - INFO - Scraping cycle completed: {'username': 'dealintcb', 'tweets_scraped': 0, 'tweets_saved': 0, 'duration_seconds': 45.464768, 'timestamp': '2025-10-15T19:26:53.771334', 'success': False}
