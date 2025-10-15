@@ -1,0 +1,54 @@
+{
+  "test_name": "test1_carbon_marketplace_full",
+  "test_input": {
+    "source": "whatsapp",
+    "send_email": true,
+    "text": "\nDude, carbon credit marketplaces are exploding! Just saw Patch raise $55M.\n\nThe global market is projected to grow from $838B in 2025 to over $10 trillion by 2034.\n\nShould we build a carbon credit marketplace platform? Companies like Xpansiv (16.7% market share) \nand Verra are already dominating, but there's room for disruption with better tech.\n\nThis could be massive - thoughts?\n        "
+  },
+  "pipeline_result": {
+    "status": "no_actionable_ideas",
+    "pipeline_metadata": {
+      "execution_start": "2025-10-15T11:50:46.473477",
+      "execution_end": "2025-10-15T11:50:46.858271",
+      "total_duration_seconds": 0.384791
+    },
+    "agent1_result": {
+      "ideas_found": [],
+      "summary": "Error during extraction: <html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body>\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>openresty/1.27.4</center>\r\n<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'98f0795efcb5ebb5',t:'MTc2MDU0MzQ0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>",
+      "confidence": "low",
+      "metadata": {
+        "source": "whatsapp",
+        "timestamp": "2025-10-15T11:50:46.858208",
+        "status": "error",
+        "error": "<html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body>\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>openresty/1.27.4</center>\r\n<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'98f0795efcb5ebb5',t:'MTc2MDU0MzQ0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>"
+      }
+    },
+    "agent1_metadata": {
+      "ideas_extracted": 0,
+      "duration_seconds": 0.384748
+    },
+    "agent2_results": [],
+    "agent2_metadata": {
+      "ideas_researched": 0,
+      "successful_collections": 0,
+      "duration_seconds": 0
+    },
+    "agent3_results": [],
+    "agent3_metadata": {
+      "reports_generated": 0,
+      "successful_reports": 0,
+      "duration_seconds": 0
+    },
+    "agent4_results": [],
+    "agent4_metadata": {
+      "emails_sent": 0,
+      "successful_emails": 0,
+      "duration_seconds": 0
+    }
+  },
+  "test_metadata": {
+    "test_start": "2025-10-15T11:50:46.473475",
+    "test_duration": 0.384832,
+    "status": "success"
+  }
+}

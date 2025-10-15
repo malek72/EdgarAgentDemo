@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-15T11:50:46.951069",
+  "total_tests": 2,
+  "passed": 2,
+  "failed": 0,
+  "success_rate": "100.0%",
+  "total_ideas_extracted": 0,
+  "total_reports_generated": 0,
+  "total_emails_sent": 0,
+  "total_duration": 0.475741,
+  "avg_duration_per_test": "0.24s",
+  "test_results": {
+    "test1_carbon_marketplace_full": {
+      "status": "success",
+      "duration": 0.384832,
+      "ideas_extracted": 0,
+      "reports_generated": 0,
+      "emails_sent": 0
+    },
+    "test2_vertical_farming_full": {
+      "status": "success",
+      "duration": 0.090909,
+      "ideas_extracted": 0,
+      "reports_generated": 0,
+      "emails_sent": 0
+    }
+  }
+}
