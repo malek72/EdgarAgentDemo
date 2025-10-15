@@ -7,6 +7,7 @@ from config.database import *
 from typing import List, Dict
 import json
 from datetime import datetime
+from Agents.core.pipeline_complete import main as run_single_complete_pipeline_test
 
 route = APIRouter(prefix="/whatsapp", tags=["WhatsApp"])
 
@@ -33,7 +34,7 @@ def receive_and_store_message(message_data: Dict) -> Dict:
         inbound_messages = value.get('messages') or []
         echo_messages = value.get('message_echoes') or []
         logger.info(f"Parsed payload: inbound_count={len(inbound_messages)}, echo_count={len(echo_messages)}")
-
+        
         # Choose first available message from either list
         msg = None
         is_echo = False
@@ -70,7 +71,7 @@ def receive_and_store_message(message_data: Dict) -> Dict:
             body = f"[Video: {(msg.get('video') or {}).get('caption', 'No caption')}]"
         else:
             body = "[Unsupported message type]"
-        
+        run_single_complete_pipeline_test(body,'whatesapp')
         # Parse timestamp
         received_at = None
         if timestamp:

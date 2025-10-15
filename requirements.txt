@@ -10,3 +10,51 @@ lxml
 pandas
 schedule
 tweepy
+openai
+
+# Agents SDK (OpenAI Agents Python)
+# Install from: https://github.com/openai/openai-agents-python
+# pip install git+https://github.com/openai/openai-agents-python.git
+openai-agents
+
+# Environment variables management
+python-dotenv
+
+# Async support for nested event loops (Jupyter compatibility)
+nest-asyncio
+
+# ============================================================================
+# AGENT 3: REPORT WRITER DEPENDENCIES
+# ============================================================================
+
+# Markdown to HTML conversion
+markdown2
+
+# PDF generation (requires system libraries: brew install cairo pango gdk-pixbuf)
+# If system libraries not available, PDF generation will gracefully fail
+# Markdown reports will still be generated
+weasyprint
+
+# Alternative PDF generator (no system dependencies)
+# Uncomment if weasyprint fails:
+# reportlab>=4.0.0
+
+# ============================================================================
+# OPTIONAL BUT RECOMMENDED
+# ============================================================================
+
+# Testing
+pytest
+pytest-asyncio
+
+# Utilities
+requests
+aiohttp
+
+# Data visualization (for future enhancements)
+# matplotlib>=3.7.0
+# pandas>=2.0.0
+# plotly>=5.18.0
+
+composio
+composio_openai
