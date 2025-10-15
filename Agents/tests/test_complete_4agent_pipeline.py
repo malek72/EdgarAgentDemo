@@ -19,7 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "core"))
 
 import nest_asyncio
-from pipeline_complete import CompleteInvestmentPipeline
+from Agents.core.pipeline_complete import CompleteInvestmentPipeline
 
 nest_asyncio.apply()
 

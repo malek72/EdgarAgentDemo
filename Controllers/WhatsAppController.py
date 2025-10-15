@@ -8,6 +8,8 @@ from typing import List, Dict
 import json
 from datetime import datetime
 from Agents.core.pipeline_complete import main as run_single_complete_pipeline_test
+from Agents.tests.test_complete_4agent_pipeline import run_single_complete_pipeline_test
+from Agents.core.pipeline_complete import CompleteInvestmentPipeline
 
 route = APIRouter(prefix="/whatsapp", tags=["WhatsApp"])
 
@@ -71,7 +73,10 @@ def receive_and_store_message(message_data: Dict) -> Dict:
             body = f"[Video: {(msg.get('video') or {}).get('caption', 'No caption')}]"
         else:
             body = "[Unsupported message type]"
-        run_single_complete_pipeline_test(body,'whatesapp')
+        pipeline = CompleteInvestmentPipeline(verbose=True)
+        test_data = []
+        test_data.append({'text': body, 'source': 'whatsapp'})
+        result =  run_single_complete_pipeline_test(pipeline, 'whatsapp', test_data)
         # Parse timestamp
         received_at = None
         if timestamp:
